@@ -46,6 +46,10 @@ TARGET_HAS_FOD := true
 # Inherit from sm7250-common
 $(call inherit-product, device/xiaomi/sm7250-common/lito.mk)
 
+# UDFPS animations
+
+EXTRA_UDFPS_ANIMATIONS := true
+
 # Don't build debug for host or device
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := true
 ART_BUILD_TARGET_NDEBUG := true
