@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/xtended_monet.mk
+   $(LOCAL_DIR)/xdroid_monet.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_monet-user \
-    xtended_monet-userdebug \
-    xtended_monet-eng
+    xdroid_monet-user \
+    xdroid_monet-userdebug \
+    xdroid_monet-eng
