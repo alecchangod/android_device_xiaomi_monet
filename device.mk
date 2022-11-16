@@ -4,38 +4,50 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from vendor blobs
-$(call inherit-product, vendor/xiaomi/monet/monet-vendor.mk)
-$(call inherit-product, vendor/xiaomi/sm7250-common/sm7250-common-vendor.mk)
+
+# Inherit from sm7250-common
+$(call inherit-product, device/xiaomi/sm7250-common/lito.mk)
+
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lineage
+
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
+PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Audio configs
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Call recording for Google Dialer
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/com.google.android.apps.dialer.call_recording_audio.features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
+# Inherit from vendor blobs
+$(call inherit-product, vendor/xiaomi/monet/monet-vendor.mk)
+$(call inherit-product, vendor/xiaomi/sm7250-common/sm7250-common-vendor.mk)
+
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-xtended
 
 # RRO configuration
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
-
-# Board
-PRODUCT_USES_QCOM_HARDWARE := true
-PRODUCT_BOARD_PLATFORM := sm7250
-
-# Screen density
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
-TARGET_SCREEN_DENSITY := 401
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
 
 # Fingerprint
 TARGET_HAS_FOD := true
@@ -43,6 +55,7 @@ TARGET_HAS_FOD := true
 # Properties
 -include $(LOCAL_PATH)/properties.mk
 
+<<<<<<< HEAD
 # Inherit from sm7250-common
 $(call inherit-product, device/xiaomi/sm7250-common/lito.mk)
 
@@ -53,3 +66,7 @@ ART_BUILD_TARGET_DEBUG := true
 ART_BUILD_HOST_NDEBUG := true
 ART_BUILD_HOST_DEBUG := false
 USE_DEX2OAT_DEBUG := true
+=======
+# UDFPS animations
+EXTRA_UDFPS_ANIMATIONS := true
+>>>>>>> 9bf443e (added Call recording for Google Dialer)
