@@ -509,7 +509,8 @@
          and on the navigation bar and disabled for all other devices. -->
     <bool name="config_statusBarBurnInProtection">true</bool>
 
-    <!-- Night Light FOD -
+    <!-- Night Light FOD -->
+    <bool name="config_udfpsDisableNightLight">true</bool>
 
      <!-- The list of components which should be automatically disabled for a specific device. -->
     <string-array name="config_deviceDisabledComponents" translatable="false">
