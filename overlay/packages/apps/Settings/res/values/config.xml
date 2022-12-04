@@ -24,5 +24,4 @@
 
     <!-- Whether Screen Off FOD Working for this Device -->
     <bool name="config_screenOffFodWorking">true</bool>
-
 </resources>
