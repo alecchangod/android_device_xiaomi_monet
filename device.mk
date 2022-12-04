@@ -39,15 +39,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/monet/monet-vendor.mk)
 
-
-# Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
-
-
-# RRO configuration
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
-
 # Fingerprint
 TARGET_HAS_FOD := true
 
