@@ -38,7 +38,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/monet/monet-vendor.mk)
-$(call inherit-product, vendor/xiaomi/sm7250-common/sm7250-common-vendor.mk)
 
 
 # Setup dalvik vm configs
