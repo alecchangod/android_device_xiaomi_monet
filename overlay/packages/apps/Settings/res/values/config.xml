@@ -16,11 +16,13 @@
 ** limitations under the License.
 */
 -->
-<!-- Whether Screen Off FOD Working for this Device -->
 
 
 
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Whether Screen Off FOD Working for this Device -->
     <bool name="config_screenOffFodWorking">true</bool>
+
 </resources>
