@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/xtended_monet.mk
+   $(LOCAL_DIR)/calyx_monet.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_monet-user \
-    xtended_monet-userdebug \
-    xtended_monet-eng
+    calyx_monet-user \
+    calyx_monet-userdebug \
+    calyx_monet-eng
