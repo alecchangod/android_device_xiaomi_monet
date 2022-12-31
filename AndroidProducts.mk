@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/lineage_monet.mk
+   $(LOCAL_DIR)/aospa_monet.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_monet-user \
-    lineage_monet-userdebug \
-    lineage_monet-eng
+    aospa_monet-user \
+    aospa_monet-userdebug \
+    aospa_monet-eng
