@@ -11,6 +11,8 @@ DEVICE_PATH := device/xiaomi/monet
 
 BUILD_BROKEN_DUP_RULES := true
 
+TARGET_BOARD_PLATFORM := lito
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 
