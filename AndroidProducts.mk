@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/xtended_monet.mk
+   $(LOCAL_DIR)/bootlegger_monet.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_monet-user \
-    xtended_monet-userdebug \
-    xtended_monet-eng
+    bootlegger_monet-user \
+    bootlegger_monet-userdebug \
+    bootlegger_monet-eng
