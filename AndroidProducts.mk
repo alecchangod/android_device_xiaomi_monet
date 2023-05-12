@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/octavi_monet.mk
+   $(LOCAL_DIR)/yaap_monet.mk
 
 COMMON_LUNCH_CHOICES := \
-    octavi_monet-user \
-    octavi_monet-userdebug \
-    octavi_monet-eng
+    yaap_monet-user \
+    yaap_monet-userdebug \
+    yaap_monet-eng

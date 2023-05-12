@@ -8,8 +8,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Octavi stuff.
-$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+# Inherit some common yaap stuff.
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Inherit from monet device
 $(call inherit-product, device/xiaomi/monet/device.mk)
@@ -18,10 +18,10 @@ $(call inherit-product, device/xiaomi/monet/device.mk)
 $(call inherit-product, vendor/xiaomi-firmware/monet/firmware.mk)
 
 # MIUI Camera
-$(call inherit-product, vendor/xiaomi/camera/products/miuicamera.mk)
+#$(call inherit-product, vendor/xiaomi/camera/products/miuicamera.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := octavi_monet
+PRODUCT_NAME := yaap_monet
 PRODUCT_DEVICE := monet
 BOARD_VENDOR := Xiaomi
 TARGET_VENDOR := Xiaomi
