@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/bootlegger_monet.mk
+   $(LOCAL_DIR)/bootleg_monet.mk
 
 COMMON_LUNCH_CHOICES := \
-    bootlegger_monet-user \
-    bootlegger_monet-userdebug \
-    bootlegger_monet-eng
+    bootleg_monet-user \
+    bootleg_monet-userdebug \
+    bootleg_monet-eng

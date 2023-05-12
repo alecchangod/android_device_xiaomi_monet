@@ -17,7 +17,7 @@ $(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/monet/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := bootlegger_monet
+PRODUCT_NAME := bootleg_monet
 PRODUCT_DEVICE := monet
 BOARD_VENDOR := Xiaomi
 TARGET_VENDOR := Xiaomi
