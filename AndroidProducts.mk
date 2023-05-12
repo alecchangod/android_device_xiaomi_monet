@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/xtended_monet.mk
+   $(LOCAL_DIR)/colt_monet.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_monet-user \
-    xtended_monet-userdebug \
-    xtended_monet-eng
+    colt_monet-user \
+    colt_monet-userdebug \
+    colt_monet-eng
