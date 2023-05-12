@@ -21,7 +21,7 @@ $(call inherit-product, vendor/xiaomi-firmware/monet/firmware.mk)
 #$(call inherit-product, vendor/xiaomi/camera/products/miuicamera.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := aosp_monet
+PRODUCT_NAME := lineage_monet
 PRODUCT_DEVICE := monet
 BOARD_VENDOR := Xiaomi
 TARGET_VENDOR := Xiaomi
