@@ -8,17 +8,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
-
 # Inherit from monet device
 $(call inherit-product, device/xiaomi/monet/device.mk)
 
-# MIUI Camera
-$(call inherit-product, vendor/xiaomi/camera/products/miuicamera.mk)
-
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := xtended_monet
+PRODUCT_NAME := aosp_monet
 PRODUCT_DEVICE := monet
 BOARD_VENDOR := Xiaomi
 TARGET_VENDOR := Xiaomi
@@ -26,16 +20,14 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2002J9G
 
-TARGET_INCLUDE_PIXEL_CHARGER := true
-
-
-# Xtended Stuffs
-XTENDED_BUILD_MAINTAINER := alecchangod
-XTENDED_BUILD_TYPE := OFFICIAL
+# Inherit some common PixelExtended stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_GAPPS_ARCH := arm64
+FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP := true
-XTENDED_BUILD_DONATE_URL := https://www.paypal.com/paypalme/Alec174
+TARGET_INCLUDE_PIXEL_CHARGER := true
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
