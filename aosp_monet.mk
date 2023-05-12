@@ -20,14 +20,12 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := M2002J9G
 
-# Inherit some common PixelExtended stuff
+#Elixir Stuffs
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_INCLUDE_PIXEL_CHARGER := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+ELIXIR_MAINTAINER := alecchangod
+ELIXIR_BUILD_TYPE := UNOFFICIAL
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # Build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
