@@ -38,7 +38,6 @@ TARGET_WANTS_FOD_ANIMATIONS := true
 # TARGET_CORE_GAPPS := true
 
 # Alpha prop
-ALPHA_BUILD_TYPE := UNOFFICIAL
 ALPHA_MAINTAINER := alecchangod
 
 # Alpha device prop
