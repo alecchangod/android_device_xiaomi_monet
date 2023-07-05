@@ -23,6 +23,11 @@
     <bool name="config_screenOffFodWorking">true</bool>
     <!-- Smart Charging -->
     <bool name="config_supportSmartCharging">true</bool>
+
+        <!-- PEX Maintainer -->
+    <string name="pex_maintainer_name" translatable="false">alecchangod</string>
+    <string name="pex_maintainer_group" translatable="false">https://t.me/alec_rom_support</string>
+
 </resources>
 
 
