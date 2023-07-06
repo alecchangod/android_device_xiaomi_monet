@@ -16,6 +16,12 @@ $(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 # Inherit from monet device
 $(call inherit-product, device/xiaomi/monet/device.mk)
 
+# Include firmware
+$(call inherit-product, vendor/xiaomi-firmware/monet/firmware.mk)
+
+# MIUI Camera
+$(call inherit-product, vendor/xiaomi/monet-miuicamera/products/miuicamera.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := bootleg_monet
 PRODUCT_DEVICE := monet

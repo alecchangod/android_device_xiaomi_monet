@@ -40,6 +40,8 @@ function blob_fixup() {
             # 18 10 90 e5  # ldr        r1,[r0,#0x18]
             # 00 f0 20 e3  # nop
             sed -i 's|\x18\x10\x90\xe5\x58\xb0\x01\xeb|\x18\x10\x90\xe5\x00\xf0\x20\xe3|g' "${2}"
+        vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so)
+            "${SIGSCAN}" -p "9A 0A 00 94" -P "1F 20 03 D5" -f "${2}"
             ;;
     esac
 }
