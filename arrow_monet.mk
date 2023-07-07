@@ -15,10 +15,10 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 $(call inherit-product, device/xiaomi/monet/device.mk)
 
 # Include firmware
-$(call inherit-product, vendor/xiaomi-firmware/monet/firmware.mk)
+# $(call inherit-product, vendor/xiaomi-firmware/monet/firmware.mk)
 
 # MIUI Camera
-$(call inherit-product, vendor/xiaomi/monet-miuicamera/products/miuicamera.mk)
+# $(call inherit-product, vendor/xiaomi/monet-miuicamera/products/miuicamera.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := arrow_monet
